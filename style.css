@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DINnext, matterhorn, helvetica, sans-serif;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+}
+
+.menu {
+  display: none;
+}
+
+.encabezado {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.links a {
+  font-size: x-large;
+  font-style: italic;
+}
+
+.logo {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  justify-content: space-around;
+  display: flex;
+}
+
+@media (max-width: 530px) {
+  .barra_navegacion {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .encabezado {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: large;
+  }
+}
+
+main {
+  background-color: gray;
+}
+
+.bienvenida {
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.bienvenida img {
+  border-radius: 10px;
+  box-shadow: 0px 6px 23px -5px white;
+
+}
+
+h2 {
+  margin: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+
+.section-grid {
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+
+.card {
+  width: 250px;
+  margin: 10px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 23px -5px white;
+  cursor: pointer;
+}
+
+
+.card > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card > p {
+  font-size: 20px;
+}
+
+@media (max-width: 796px) {
+    .section-grid {
+        width: 80%;
+        margin: auto;
+        border-radius: 20px;
+        gap: 8px;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+      }
+}
+
+@media (max-width: 529px) {
+    .section-grid {
+        width: 80%;
+        margin: auto;
+        border-radius: 20px;
+        gap: 20px;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+      }
+}
+
+.social {
+    width: fit-content;
+    background-color: yellowgreen;
+    /* position: fixed; */
+    right: 0;
+}
