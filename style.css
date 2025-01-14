@@ -201,4 +201,17 @@ h2 {
   }
 }
 
+footer {
+  width: 100%;
+  padding: 40px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: x-large;
+  color: black;
+}
+
 
